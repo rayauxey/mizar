@@ -17,8 +17,7 @@ const allPosts = posts
 	})
 	.filter((post) => post.lang === currentLocale && !post.data.hidden)
 	.sort(
-		(a, b) =>
-			a.data.lastUpdateDate.getTime() - b.data.lastUpdateDate.getTime(),
+		(a, b) => a.data.lastUpdateDate.getTime() - b.data.lastUpdateDate.getTime(),
 	) as CollectionEntry<"posts">[];
 ---
 
